@@ -1,0 +1,81 @@
+/* REGLA CSS p(selector, psudoselectores, pseudo clases, pseudo elementos) {declaración de estilo, propiedad y valor;} = p{color: red;}
+/*dar color a un texto mediante selector por elemento*/
+p {
+   color: black; 
+   font-size: 40px;
+}
+
+/*dar color a un parafo con clase de nombre parrafo (selector por clase)*/
+.parrafo {
+    color: azure;
+}
+
+
+/*dar color a un parrafo mediante selector por "id"*/
+#texto {
+color: blanchedalmond;
+font-size: 24px;
+}
+
+/* de esta forma podemos darle estilo a una clase en especifico, sin afectar otras clases con la misma estructura*/
+.main_nav {
+ margin-top: 10px;    
+ list-style: none;
+ padding-left: 0; 
+ background-color: blueviolet;
+}
+
+/*Cambiamos la forma de la lista, de vertical a horizontal*/
+.main-nav__item {
+    display: inline-block; 
+}
+/*dar mas forma a la barra de navegación*/
+.main-nav__item a {
+    color: bisque;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: red;
+}
+
+/*pseudoclases (define el stilo de un estado especial de un elemento) https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
+/*el efecto hover nos permite cambiar el color del texto cando el cursor esta sobre el element*/
+.main-nav__item a:hover {
+    color: coral;
+}
+
+/*nos permite cambiar en color de un elemento o pestaña que estamos usando en la barra de navegación*/
+.main-nav__item a:active {
+    color: darkblue;
+}
+
+/*pseudoelementos (define el estilo de una parte especifica de un elemento) https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos*/
+.main-nav__item a::after {
+    content: " | ";
+}
+
+/*modelo de Caja CSS*/
+/*trabajamos con cajas a las cuales podemos darle estilo: Margin, borde, padding, content (texto, imagen, video, width y higth*/
+.modelo_caja {
+    border: 2px;
+}
+
+/*cuando agragamos Padding y border debemos tener en cuenta esas medidas para el tamaño de la pagina, teniendo en cuanta que el navegador tambien agraga algunos estilos por defecto, podemos usar el selector universal (*) para retirar los ajustes por defecto y dejar solo los que nosotros deseamos añadir, */
+* {
+    box-sizing: border-box; /*suma el padding con el width del elemento (el navegador realiza un calculo automatico (width-paddig-border=dimensión justa y no genera scroll)) el Margin no lo recalcula*/
+    padding: 0;
+    margin: 0;
+}
+
+.titulos {
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+    padding: 20px 35px; /*20 arriba a bajo, 35 derecha e izquierda  */
+}
+
+/*herencia*/
+html {
+    font-size: 75%;
+    font-family: 'Times New Roman', Times, serif;
+}
