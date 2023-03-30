@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5;
+}
+
+header {
+    width: 100%;
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+.nav {
+    background-color: darkgray;
+    text-align: right;
+    padding: 0.1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.main-aside {
+    background-color: mediumaquamarine;
+    width: 25rem;
+    height: 100%;
+    display: inline-block;
+}
+
+.main-aside_div {
+    margin: 1rem;
+    background-color: darkolivegreen;
+    height: 11rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.1rem 0.1rem 0.2 rem black;
+}
+
+.main-section {
+    background-color: coral;
+    position: absolute;
+    top: 7rem;
+    left: 25rem;
+    height: 65rem;
+}
+
+.main-section p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}

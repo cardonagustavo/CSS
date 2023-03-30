@@ -1,0 +1,9 @@
+/*em toma el tamaño de fuente que tiene el padre directo*/
+
+body {
+    font-size: 20px;
+}
+
+.container {
+    font-size: 1.5em;
+}

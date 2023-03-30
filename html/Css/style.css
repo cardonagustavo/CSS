@@ -75,7 +75,20 @@ font-size: 24px;
 }
 
 /*herencia*/
+/*orden de declaracion para aplicar estilos, */
 html {
     font-size: 75%;
     font-family: 'Times New Roman', Times, serif;
 }
+
+h2 {
+  font-size: inherit;/*heredar, hereda de el tamano de furnte estipulado, en este caso html*/
+  
+}
+
+/*Como se controla el orden en css
+1 - Especificidad: orden de aplicación 1 !important 2 inline syles 3#id 4 class 5 tag
+2 - Orden: las declaraciones al final del documento anularan las que se declararon al inicio generando un conflicto.
+3 - Importancia: el navegador primero aplica los estilos de navegador, segundo aplica los estilos que nosotros creamos, por ultimo carga los estilos que tengan !important
+https://www.codecaptain.io/tools/css-specificity-calculator*/
+

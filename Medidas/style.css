@@ -1,0 +1,19 @@
+/*% absolutas y relativas
+em
+rem (root em)
+max-width / max-height
+mix-width / mix-height
+vw (viewport - width)
+vh (viewport - height)*/
+
+
+/*cuando damos una medida o un tamaño en px es absoluto ya independiente del tamaño del dispositivo siempre sera los mismos px*/
+.main1 {
+    font-size: 16px;
+}
+
+.p2 {
+    background-color: blue;
+    width: 100%;
+    height: 500px;
+}
